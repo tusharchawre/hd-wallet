@@ -31,7 +31,7 @@ const BottomNav = () => {
                                 />
                             )}
                         </AnimatePresence>
-                        <div className='relative flex items-center justify-center z-20 gap-2'>
+                        <div className='relative flex items-center justify-center z-20'>
                             <Icon className='text-accent text-center' size={24} />
                             <AnimatePresence>
                                 {activeTab === key && (
@@ -40,7 +40,7 @@ const BottomNav = () => {
                                         animate={{ opacity: 1, width: 'auto' }}
                                         exit={{ opacity: 0, width: 0 }}
                                         transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                                        className='text-accent font-semibold text-sm whitespace-nowrap overflow-hidden'
+                                        className='text-accent relative font-semibold text-sm whitespace-nowrap overflow-hidden ml-2'
                                     >
                                         {label}
                                     </motion.span>
